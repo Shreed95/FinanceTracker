@@ -21,10 +21,10 @@ const FinanceForm = ({ setCount }) => {
         try {
             let url;
             if (formData.type === "income") {
-                url = "http://localhost:8080/api/transactions/addincome";
+                url = "https://finance-tracker-server-rho.vercel.app/api/transactions/addincome";
             }
             else {
-                url = "http://localhost:8080/api/transactions/addexpense";
+                url = "https://finance-tracker-server-rho.vercel.app/api/transactions/addexpense";
             }
 
             const response = await fetch(url, {

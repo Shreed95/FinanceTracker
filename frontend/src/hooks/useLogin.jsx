@@ -10,7 +10,7 @@ export const useLogIn = () => {
     setIsLoading(true);
     setError(null);
 
-    const response = await fetch("http://localhost:8080/api/users/login", {
+    const response = await fetch("https://finance-tracker-server-rho.vercel.app/api/users/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -9,7 +9,7 @@ const AllTransaction = ({count}) => {
   useEffect(() => {
     const fetchIncome = async () => {
       try {
-        const response = await fetch(`http://localhost:8080/api/transactions/getincome/${userId}`);
+        const response = await fetch(`https://finance-tracker-server-rho.vercel.app/api/transactions/getincome/${userId}`);
         const data = await response.json();
         setIncome(data.income);
       } catch (error) {
@@ -19,7 +19,7 @@ const AllTransaction = ({count}) => {
 
     const fetchExpense = async () => {
       try {
-        const response = await fetch(`http://localhost:8080/api/transactions/getexpense/${userId}`);
+        const response = await fetch(`https://finance-tracker-server-rho.vercel.app/api/transactions/getexpense/${userId}`);
         const data = await response.json();
         setExpense(data.expense);
       } catch (error) {

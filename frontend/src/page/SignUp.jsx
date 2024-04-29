@@ -19,7 +19,7 @@ const SignUp = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:8080/api/users/signup", {
+    const response = await fetch("https://finance-tracker-server-rho.vercel.app/api/users/signup", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
